@@ -59,18 +59,7 @@ export default function Home() {
       </section>
 
       {/* Trust Banner */}
-      <section className="border-y bg-white py-10">
-        <div className="container mx-auto px-4 md:px-8 text-center">
-          <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">Trusted by global clients in healthcare, fintech, and enterprise</p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="h-8 w-32 bg-muted rounded flex items-center justify-center">
-                <span className="text-xs text-muted-foreground font-medium">CLIENT LOGO</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Services Snapshot */}
       <section className="py-20 md:py-28 bg-gray-50">
