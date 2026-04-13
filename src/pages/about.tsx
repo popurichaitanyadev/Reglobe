@@ -5,7 +5,7 @@ import { Target, Compass, Shield } from "lucide-react";
 
 export default function About() {
   useEffect(() => {
-    document.title = "About Us - Reglobe";
+    document.title = "About Us - ReglobeAI";
   }, []);
 
   const fadeIn = {
@@ -28,7 +28,7 @@ export default function About() {
               Empowering Global Enterprise with <span className="text-primary">Elite Talent</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Reglobe Private Limited is a boutique IT services firm based in Hyderabad, India. We specialize in connecting US and UK businesses with top-tier Indian tech professionals.
+              REGLOBE PRIVATE LIMITED is a boutique IT services firm based in Hyderabad, India. We specialize in connecting US and UK businesses with top-tier Indian tech professionals.
             </p>
           </motion.div>
         </div>
@@ -47,7 +47,7 @@ export default function About() {
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Founded on the principle that quality technical talent should not be bound by geography, Reglobe was established to serve as a reliable bridge between global enterprises and the rich tech ecosystem of India.
+                  Founded on the principle that quality technical talent should not be bound by geography, ReglobeAI was established to serve as a reliable bridge between global enterprises and the rich tech ecosystem of India.
                 </p>
                 <p>
                   We are not a volume-driven megacorp, nor a fledgling startup. We are a boutique consultancy that prides itself on precision, quality, and quiet confidence. We deliver results without fanfare.

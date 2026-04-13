@@ -7,7 +7,7 @@ import { CheckCircle2, Globe, Users, Zap, Building2, Code2, LineChart } from "lu
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Reglobe - IT Staffing & Technology Services";
+    document.title = "ReglobeAI - IT Staffing & Technology Services";
   }, []);
 
   const fadeIn = {
@@ -142,7 +142,7 @@ export default function Home() {
               variants={fadeIn}
               className="lg:w-1/2"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">The Reglobe Advantage</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">The ReglobeAI Advantage</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 We understand the challenges of remote staffing. Our model is built on transparency, quality, and seamless communication.
               </p>
@@ -195,7 +195,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to scale your tech capabilities?</h2>
           <p className="text-lg text-gray-300 mb-10">
-            Let's discuss how Reglobe can provide the specialized talent and solutions your enterprise needs to thrive.
+            Let's discuss how ReglobeAI can provide the specialized talent and solutions your enterprise needs to thrive.
           </p>
           <Button size="lg" variant="default" asChild className="h-14 px-10 text-lg bg-primary hover:bg-primary/90">
             <Link href="/contact">Schedule a Consultation</Link>

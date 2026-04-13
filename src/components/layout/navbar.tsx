@@ -7,6 +7,8 @@ export function Navbar() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
   const links = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -19,8 +21,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2" data-testid="link-home">
-            <span className="text-xl font-bold text-[#1E3A5F] tracking-tight">Reglobe</span>
+          <Link href="/" className="flex items-center space-x-2" data-testid="link-home" onClick={scrollToTop}>
+            <img src="/Logo-transparent.png" alt="ReglobeAI" className="h-40 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,12 +35,13 @@ export function Navbar() {
                   location === link.href ? "text-primary font-semibold" : "text-muted-foreground"
                 }`}
                 data-testid={`link-${link.label.toLowerCase()}`}
+                onClick={scrollToTop}
               >
                 {link.label}
               </Link>
             ))}
             <Button asChild>
-              <Link href="/contact" data-testid="button-get-in-touch">
+              <Link href="/contact" data-testid="button-get-in-touch" onClick={scrollToTop}>
                 Get In Touch
               </Link>
             </Button>
@@ -67,14 +70,14 @@ export function Navbar() {
                 className={`block text-base font-medium ${
                   location === link.href ? "text-primary font-semibold" : "text-muted-foreground"
                 }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => { setIsMobileMenuOpen(false); scrollToTop(); }}
               >
                 {link.label}
               </Link>
             ))}
             <div className="pt-2">
               <Button asChild className="w-full">
-                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/contact" onClick={() => { setIsMobileMenuOpen(false); scrollToTop(); }}>
                   Get In Touch
                 </Link>
               </Button>

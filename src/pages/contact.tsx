@@ -29,7 +29,7 @@ export default function Contact() {
   const [mailProvider, setMailProvider] = useState("default");
 
   useEffect(() => {
-    document.title = "Contact Us - Reglobe IT Solutions";
+    document.title = "Contact Us - ReglobeAI";
   }, []);
 
   const form = useForm<FormValues>({
@@ -44,7 +44,7 @@ export default function Contact() {
   });
 
   function onSubmit(data: FormValues) {
-    const subject = encodeURIComponent(`Reglobe inquiry from ${data.name}`);
+    const subject = encodeURIComponent(`ReglobeAI inquiry from ${data.name}`);
     const body = encodeURIComponent(
       `Name: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nService Interested In: ${data.service}\n\nMessage:\n${data.message}`,
     );
@@ -124,7 +124,7 @@ export default function Contact() {
                     <Building className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground text-lg mb-1">Reglobe Private Limited</h4>
+                    <h4 className="font-bold text-foreground text-lg mb-1">REGLOBE PRIVATE LIMITED</h4>
                     <p className="text-muted-foreground">Premium IT Services & Staffing</p>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ export default function Contact() {
                   allowFullScreen 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Reglobe Location"
+                  title="ReglobeAI Location"
                 ></iframe>
               </div>
             </motion.div>

@@ -7,7 +7,7 @@ import { CheckCircle2, Server, Cloud, Database, Code, LayoutDashboard, Globe, Za
 
 export default function Services() {
   useEffect(() => {
-    document.title = "Services - Reglobe IT Staffing & Technology";
+    document.title = "Services - ReglobeAI IT Staffing & Technology";
   }, []);
 
   const fadeIn = {

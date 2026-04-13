@@ -61,7 +61,7 @@ export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
 
   useEffect(() => {
-    document.title = "Portfolio - Reglobe IT Solutions";
+    document.title = "Portfolio - ReglobeAI";
   }, []);
 
   const filteredProjects = projects.filter(

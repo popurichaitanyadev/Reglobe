@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <span className="text-xl font-bold tracking-tight text-white">Reglobe</span>
+              <span className="text-xl font-bold tracking-tight text-white">ReglobeAI</span>
             </Link>
             <p className="text-sm text-gray-300 mb-6 max-w-xs">
               Your trusted IT staffing & technology partner. Bridging global businesses with elite Indian tech talent.
@@ -37,7 +37,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <address className="not-italic text-sm text-gray-300 space-y-3">
-              <p>Reglobe Private Limited</p>
+              <p>REGLOBE PRIVATE LIMITED</p>
               <p>Hyderabad, Telangana, India</p>
               <p>
                 <a href="mailto:popurichaitanyadev@gmail.com" className="hover:text-white transition-colors">popurichaitanyadev@gmail.com</a>
@@ -51,7 +51,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Reglobe Private Limited. All rights reserved.
+            &copy; {new Date().getFullYear()} REGLOBE PRIVATE LIMITED. All rights reserved.
           </p>
           <div className="flex space-x-4 text-sm text-gray-400">
             <span>Privacy Policy</span>
