@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.1.4",   // <-- add this line
+  "packageManager": "pnpm@9.1.4", 
 
   "scripts": {
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
