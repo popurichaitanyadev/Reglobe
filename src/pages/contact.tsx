@@ -146,8 +146,9 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-foreground text-lg mb-1">Email</h4>
                     <div className="flex flex-col gap-1">
-                      <a href="mailto:popurichaitanyadev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">popurichaitanyadev@gmail.com</a>
-                      <a href="mailto:pavankamjula98@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">pavankamjula98@gmail.com</a>
+                      <a href="mailto:info@reglobeai.com" className="text-muted-foreground hover:text-primary transition-colors">info@reglobeai.com</a>
+                      <a href="mailto:pavan.kamjula@reglobeai.com" className="text-muted-foreground hover:text-primary transition-colors">pavan.kamjula@reglobeai.com</a>
+                      <a href="mailto:chaitanya.popuri@reglobeai.com" className="text-muted-foreground hover:text-primary transition-colors">chaitanya.popuri@reglobeai.com</a>
                     </div>
                   </div>
                 </div>
