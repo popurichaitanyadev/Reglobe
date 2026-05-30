@@ -38,7 +38,7 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <address className="not-italic text-sm text-gray-300 space-y-3">
               <p>REGLOBE PRIVATE LIMITED</p>
-              <p>Hyderabad, Telangana, India</p>
+              <p>7-76 Kothareddypalem, Chebrolue,<br/>Guntur, AP, India 522212</p>
               <p>
                 <a href="mailto:popurichaitanyadev@gmail.com" className="hover:text-white transition-colors">popurichaitanyadev@gmail.com</a>
               </p>

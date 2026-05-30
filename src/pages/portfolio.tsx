@@ -54,6 +54,30 @@ const projects: Project[] = [
     description: "Digitization of manual paper-based workflows across 15 departments using Microsoft Power Apps and Power Automate.",
     tags: ["Power Apps", "Power Automate", "SharePoint", "Office 365"],
     image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 6,
+    title: "Embedded Networking & Web Integration",
+    category: "Integration",
+    description: "End-to-end solution bridging embedded IoT devices and firmware systems with a real-time web dashboard, enabling remote monitoring, diagnostics, and OTA updates for industrial hardware.",
+    tags: ["Embedded C", "MQTT", "Node.js", "React", "WebSockets"],
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 7,
+    title: "CareerOS — Career Management Platform",
+    category: "Web",
+    description: "Full-featured career management web application offering job tracking, resume builder, interview prep pipelines, and AI-powered application insights — all in one unified OS-style workspace.",
+    tags: ["Next.js", "React", "Node.js", "PostgreSQL", "AI/ML"],
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 8,
+    title: "Hospital Pre-Authorization Automation",
+    category: "Integration",
+    description: "Automated pre-authorization workflow system for hospitals, reducing manual insurance approval cycles from days to hours through intelligent form routing, payer API integrations, and real-time status tracking.",
+    tags: ["Java", ".NET", "HL7 FHIR", "Azure", "REST APIs"],
+    image: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
