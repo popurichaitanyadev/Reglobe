@@ -3,10 +3,15 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
 
-  const { name, company, email, service, message } = req.body;
+  const { name, company, email, phone, service, message } = req.body;
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: "Missing required fields" });
+  }
+
+  if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+    console.error("SMTP env vars missing");
+    return res.status(500).json({ error: "SMTP not configured" });
   }
 
   const transporter = nodemailer.createTransport({
@@ -18,6 +23,14 @@ export default async function handler(req, res) {
       pass: process.env.SMTP_PASS,
     },
   });
+
+  try {
+    await transporter.verify();
+    console.log("SMTP verified OK");
+  } catch (err) {
+    console.error("SMTP verify failed:", err.message);
+    return res.status(500).json({ error: "SMTP connection failed: " + err.message });
+  }
 
   try {
     await transporter.sendMail({
@@ -38,6 +51,7 @@ export default async function handler(req, res) {
             <tr><td style="padding:8px 0;color:#64748b;width:120px"><strong>Name</strong></td><td style="padding:8px 0">${name}</td></tr>
             <tr><td style="padding:8px 0;color:#64748b"><strong>Company</strong></td><td style="padding:8px 0">${company}</td></tr>
             <tr><td style="padding:8px 0;color:#64748b"><strong>Email</strong></td><td style="padding:8px 0"><a href="mailto:${email}">${email}</a></td></tr>
+            <tr><td style="padding:8px 0;color:#64748b"><strong>Phone</strong></td><td style="padding:8px 0"><a href="tel:${phone}">${phone}</a></td></tr>
             <tr><td style="padding:8px 0;color:#64748b"><strong>Service</strong></td><td style="padding:8px 0">${service}</td></tr>
           </table>
           <div style="margin-top:20px;padding:16px;background:#f8fafc;border-radius:8px">

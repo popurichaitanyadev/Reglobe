@@ -15,6 +15,7 @@ const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
   company: z.string().min(2, "Company is required"),
   email: z.string().email("Invalid email address"),
+  phone: z.string().min(7, "Enter a valid phone number"),
   service: z.string().min(1, "Please select a service"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
@@ -35,6 +36,7 @@ export default function Contact() {
       name: "",
       company: "",
       email: "",
+      phone: "",
       service: "",
       message: "",
     },
@@ -220,6 +222,19 @@ export default function Contact() {
                             <FormLabel>Email Address</FormLabel>
                             <FormControl>
                               <Input placeholder="john@example.com" type="email" {...field} data-testid="input-email" />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Phone Number</FormLabel>
+                            <FormControl>
+                              <Input placeholder="+1 (555) 000-0000" type="tel" {...field} data-testid="input-phone" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
